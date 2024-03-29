@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color-black: #000;
+  --primary-color-darkGreen: #01a955;
+  --primary-color-lightPurple: #a605bc;
+  --primary-color-deepPink: #cc014b;
+  --primary-color-darkPurple: #4208d5;
+  --primary-color-lightBlue: #98e7f9;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+h2,
+.h2 {
+  @apply 2xl:text-big-heading-huge xl:text-big-heading-large text-big-heading-mobile lg:text-big-heading;
+}
+
+.text-image:first-child .text-image-first {
+  @apply pt-0;
+}
+
+p {
+  @apply font-body;
+}
