@@ -16,6 +16,9 @@ export default function HeroSection({ data }: HeroSectionProps) {
 
   return (
     <div className="relative h-[90vh] w-full bg-blue">
+      <div className="flex justify-center">
+        <img className="absolute top-0 z-10 lg:w-1/4 pt-20 lg:pt-8 px-5" src="/logoBlue.png" />
+      </div>
       <Image
         src={urlForImage(backgroundImage)}
         alt=""

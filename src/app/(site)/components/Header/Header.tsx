@@ -39,6 +39,9 @@ export default function Header({ ticketLink }) {
         className={`fixed left-0 top-0 h-screen w-full  transform bg-black px-5 lg:h-auto lg:px-10 lg:pb-12 ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'} transition-transform duration-500 ease-in-out`}
         style={{ zIndex: 10 }}
       >
+        <div className="flex justify-center">
+          <img className="absolute top-0 z-10 w-1/4 pt-8" src="/logoBlack.png" />
+        </div>
         <div className="mb-10 flex pt-8">
           <div
             className="cursor-pointer font-heading uppercase text-white"

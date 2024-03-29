@@ -37,7 +37,7 @@ export default function HeroText({ animatedTextLines }: HeroTextProps) {
 
   return (
     <motion.div
-      className="absolute bottom-0 left-0 px-5 pb-7 lg:p-10"
+      className="absolute bottom-0 left-0 px-5 pb-10 lg:px-10 lg:pb-20"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
