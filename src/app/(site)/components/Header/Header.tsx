@@ -14,6 +14,13 @@ export default function Header({ ticketLink }) {
   return (
     <div className="fixed left-0 top-8 z-20 flex w-full justify-between px-5 lg:top-11 lg:px-10">
       <div
+        className="fixed left-0 top-0 z-10 flex h-[130px] w-full justify-between"
+        style={{
+          background:
+            'linear-gradient(0deg, rgba(225, 225, 225, 0.00) 0%, rgba(0, 0, 0, 0.21) 51.86%, rgba(0, 0, 0, 0.51) 100%)',
+        }}
+      ></div>
+      <div
         className={cn(
           'z-20 cursor-pointer font-heading uppercase text-white lg:text-2xl',
           {
@@ -47,7 +54,7 @@ export default function Header({ ticketLink }) {
           >
             close
           </div>
-          <div className="hidden lg:flex h-12 w-full justify-center px-5">
+          <div className="hidden h-12 w-full justify-center px-5 lg:flex">
             <LogoBlack />
           </div>
         </div>
