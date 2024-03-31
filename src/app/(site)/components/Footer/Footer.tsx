@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion';
 
 import { TextProps } from '../../types';
-import TextContent from '../TextContent';
 import SignUp from './SignUp';
 import Socials from './Socials';
+import LogoGreen from '/public/logoGreen.svg';
 
 interface FooterProps {
   data: {
@@ -23,9 +23,10 @@ export default function Footer({ data }: FooterProps) {
   return (
     <div
       id="connect"
-      className="flex h-full w-full flex-col gap-20 bg-green-500 p-5 px-5 pt-10 lg:gap-44 lg:px-10 lg:py-32"
+      className="h-full w-full bg-green-500 px-5 pb-6 pt-7 lg:px-10 lg:pb-11 lg:pt-[60px]"
     >
       <motion.div
+        className="flex flex-col"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -41,19 +42,22 @@ export default function Footer({ data }: FooterProps) {
             },
           },
         }}
-        className="grid gap-8 lg:grid-cols-2"
       >
-        <SignUp
-          signUpText={data.signUpInvitationText}
-          investorText={data.investorInquiresText}
-        />
-        <Socials
-          instagramLink={data.instagramLink}
-          email={data.email}
-          contact={data.contactLink}
-        />
+        <div className="grid gap-8 pb-[84px] lg:grid-cols-2 lg:pb-[177px]">
+          <SignUp
+            signUpText={data.signUpInvitationText}
+            investorText={data.investorInquiresText}
+          />
+          <Socials
+            instagramLink={data.instagramLink}
+            email={data.email}
+            contact={data.contactLink}
+          />
+        </div>
+        <div className="w-full">
+          <LogoGreen />
+        </div>
       </motion.div>
-      <img src="/logoGreen.png" alt="logo" />
     </div>
   );
 }

@@ -13,10 +13,10 @@ export default function Socials({
   return (
     <div className="flex flex-col gap-8">
       <div>
-        <p className="font-bold text-lg uppercase text-lightGreen">contact</p>
-        <p className="text-lightGreen">{contact}</p>
+        <p className="text-green-100 text-lg font-bold uppercase">contact</p>
+        <p className="text-green-100">{contact}</p>
       </div>
-      <Link className="text-lg font-bold text-lightGreen" href="/faq">
+      <Link className="text-green-100 text-lg font-bold" href="/faq">
         FAQ
       </Link>
       <div className="flex gap-4">

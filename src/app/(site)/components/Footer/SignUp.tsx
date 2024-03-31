@@ -30,22 +30,22 @@ export default function SignUp({ signUpText, investorText }: SignUpProps) {
   return (
     <div className="max-w-96 space-y-8">
       <div>
-        <p className="text-lg font-bold text-lightGreen">{signUpText}</p>
+        <p className="text-green-100 text-lg font-bold">{signUpText}</p>
         <form
           onSubmit={(e) => handleSubmit(e, 'signUp')}
-          className="flex border-b border-lightGreen"
+          className="border-green-100 flex border-b"
         >
           <input
             type="email"
             value={signUpEmail}
             onChange={(e) => setSignUpEmail(e.target.value)}
             placeholder="Email"
-            className="w-full bg-transparent pt-2 text-paleGreen placeholder:text-paleGreen focus:ring-0"
+            className="text-green-400 placeholder:text-green-400 w-full bg-transparent pt-2 focus:ring-0"
             required
           />
           <button
             type="submit"
-            className="flex w-full flex-1 items-center gap-1 text-lightGreen"
+            className="text-green-100 flex w-full flex-1 items-center gap-1"
           >
             <span>SUBMIT</span>
             <svg
@@ -67,22 +67,22 @@ export default function SignUp({ signUpText, investorText }: SignUpProps) {
       </div>
 
       <div>
-        <p className="text-lg font-bold text-lightGreen">{investorText}</p>
+        <p className="text-green-100 text-lg font-bold">{investorText}</p>
         <form
           onSubmit={(e) => handleSubmit(e, 'investor')}
-          className="flex border-b border-lightGreen"
+          className="border-green-100 flex border-b"
         >
           <input
             type="email"
             value={investorEmail}
             onChange={(e) => setInvestorEmail(e.target.value)}
             placeholder="Email"
-            className="w-full bg-transparent pt-2 text-paleGreen placeholder:text-paleGreen focus:ring-0"
+            className="text-green-100 placeholder:text-green-400 w-full bg-transparent pt-2 focus:ring-0"
             required
           />
           <button
             type="submit"
-            className="flex w-full flex-1 items-center gap-1 text-lightGreen"
+            className="text-green-100 flex w-full flex-1 items-center gap-1"
           >
             <span>SUBMIT</span>
             <svg

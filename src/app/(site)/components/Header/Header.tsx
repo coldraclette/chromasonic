@@ -12,7 +12,7 @@ export default function Header({ ticketLink }) {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <div className="fixed left-0 top-8 lg:top-11 z-20 flex w-full justify-between px-5 lg:px-10">
+    <div className="fixed left-0 top-8 z-20 flex w-full justify-between px-5 lg:top-11 lg:px-10">
       <div
         className={cn(
           'z-20 cursor-pointer font-heading uppercase text-white lg:text-2xl',
@@ -47,7 +47,7 @@ export default function Header({ ticketLink }) {
           >
             close
           </div>
-          <div className=" flex h-12 w-full justify-center px-5">
+          <div className="hidden lg:flex h-12 w-full justify-center px-5">
             <LogoBlack />
           </div>
         </div>
@@ -55,35 +55,35 @@ export default function Header({ ticketLink }) {
         <div className="flex h-full flex-col text-white">
           <Link
             onClick={toggleMenu}
-            className="lg:text-lightGrey mb-4 font-heading text-big-heading-mobile uppercase text-grey lg:text-big-heading"
+            className="mb-4 font-heading text-big-heading-mobile uppercase text-grey lg:text-big-heading lg:text-lightGrey"
             href="/"
           >
             Home
           </Link>
           <Link
             onClick={toggleMenu}
-            className="lg:text-lightGrey mb-4 font-heading text-big-heading-mobile uppercase text-grey lg:text-big-heading"
+            className="mb-4 font-heading text-big-heading-mobile uppercase text-grey lg:text-big-heading lg:text-lightGrey"
             href="/#learn"
           >
             learn
           </Link>
           <Link
             onClick={toggleMenu}
-            className="lg:text-lightGrey mb-4 font-heading text-big-heading-mobile uppercase text-grey lg:text-big-heading"
+            className="mb-4 font-heading text-big-heading-mobile uppercase text-grey lg:text-big-heading lg:text-lightGrey"
             href="/#visit"
           >
             visit
           </Link>
           <Link
             onClick={toggleMenu}
-            className="lg:text-lightGrey mb-4 font-heading text-big-heading-mobile uppercase text-grey lg:text-big-heading"
+            className="mb-4 font-heading text-big-heading-mobile uppercase text-grey lg:text-big-heading lg:text-lightGrey"
             href="/#connect"
           >
             connect
           </Link>
           <Link
             onClick={toggleMenu}
-            className="lg:text-lightGrey mb-4 font-heading text-big-heading-mobile uppercase text-grey lg:text-big-heading"
+            className="mb-4 font-heading text-big-heading-mobile uppercase text-grey lg:text-big-heading lg:text-lightGrey"
             href="/faq"
           >
             faq
