@@ -31,6 +31,11 @@ const soehne = localFont({
       style: 'normal',
     },
     {
+      path: './fonts/soehne-buch.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
       path: './fonts/soehne-kraftig.woff2',
       weight: '700',
       style: 'normal',

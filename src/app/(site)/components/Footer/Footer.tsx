@@ -23,7 +23,7 @@ export default function Footer({ data }: FooterProps) {
   return (
     <div
       id="connect"
-      className="flex h-full w-full flex-col gap-20 bg-darkGreen p-5 lg:gap-44 px-5 pt-10 lg:px-10 lg:py-32"
+      className="flex h-full w-full flex-col gap-20 bg-green-500 p-5 px-5 pt-10 lg:gap-44 lg:px-10 lg:py-32"
     >
       <motion.div
         initial="hidden"
@@ -41,7 +41,7 @@ export default function Footer({ data }: FooterProps) {
             },
           },
         }}
-        className="grid lg:grid-cols-2 gap-8"
+        className="grid gap-8 lg:grid-cols-2"
       >
         <SignUp
           signUpText={data.signUpInvitationText}

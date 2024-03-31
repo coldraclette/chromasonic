@@ -26,10 +26,10 @@ export default function ImageSplide({ images }: ImageSplideProps) {
           transition: {
             duration: 0.8,
             ease: [0.76, 0, 0.24, 1],
-            delay: 0.4,
           },
         },
       }}
+      className="pb-5 pt-[14px] lg:pb-[55px] lg:pt-[50px]"
     >
       <Splide
         options={{
@@ -41,7 +41,10 @@ export default function ImageSplide({ images }: ImageSplideProps) {
         }}
       >
         {images.map((image: ImageType) => (
-          <SplideSlide key={image._key} className="h-52 w-full lg:h-[70vh]">
+          <SplideSlide
+            key={image._key}
+            className="h-52 w-full lg:h-[70vh] lg:min-h-[800px]"
+          >
             <Image
               src={urlForImage(image)}
               alt="Slide image"

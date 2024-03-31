@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { urlForImage } from '../../../../../sanity/lib/image';
 import { ImageType } from '../../types';
 import HeroText from './HeroText';
+import LogoBlue from '/public/logoBlue.svg';
 
 interface HeroSectionProps {
   data: {
@@ -15,9 +16,11 @@ export default function HeroSection({ data }: HeroSectionProps) {
   const { backgroundImage, animatedTextLines } = data;
 
   return (
-    <div className="relative h-[90vh] w-full bg-blue">
+    <div className="relative h-[90vh] min-h-[600px] w-full bg-blue">
       <div className="flex justify-center">
-        <img className="absolute top-0 z-10 lg:w-1/4 pt-20 lg:pt-8 px-5" src="/logoBlue.png" />
+        <div className="absolute top-20 z-10 flex h-10 w-full justify-center px-5 lg:top-11 lg:h-12">
+          <LogoBlue />
+        </div>
       </div>
       <Image
         src={urlForImage(backgroundImage)}

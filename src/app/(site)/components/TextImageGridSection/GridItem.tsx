@@ -1,25 +1,18 @@
-import { motion } from 'framer-motion';
-
-import { ImageType } from '../../types';
-import { cn } from '../../utils/utils';
+import { ImageType, TextImageGridSectionType } from '../../types';
 import GridItemHeader from './GridItemHeader';
 import GridItemText from './GridItemText';
 import ImageSplide from './ImageSplide';
 
 interface GridItemProps {
-  item: {
-    _key: string;
-    title: string[];
-    byline: string;
-    textArea: string;
-    color: string;
-    images: ImageType[];
-  };
+  item: TextImageGridSectionType;
 }
 
 export default function GridItem({ item }: GridItemProps) {
   return (
-    <div key={item._key} className="flex flex-col gap-5 lg:gap-20">
+    <div
+      key={item._key}
+      className="flex flex-col pb-[100px] pt-11 last:pb-0 lg:pb-[100px] lg:pt-24"
+    >
       <GridItemHeader
         title={item.title}
         byline={item.byline}
@@ -27,7 +20,11 @@ export default function GridItem({ item }: GridItemProps) {
         color={item.color}
       />
       <ImageSplide images={item.images} />
-      <GridItemText text={item.textArea} color={item.color} />
+      <GridItemText
+        text={item.textArea}
+        text2={item.textArea2}
+        color={item.color}
+      />
     </div>
   );
 }

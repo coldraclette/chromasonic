@@ -66,8 +66,8 @@ export const landingPage = {
                     list: [
                       { title: 'Green', value: 'green' },
                       { title: 'Blue', value: 'blue' },
-                      { title: 'Light Blue', value: 'lightBlue' },
-                      { title: 'Purple', value: 'purple' },
+                      { title: 'Cyan', value: 'cyan' },
+                      { title: 'Pink', value: 'pink' },
                       { title: 'Red', value: 'red' },
                     ],
                   },
@@ -177,7 +177,7 @@ export const landingPage = {
     },
     // TEXT IMAGE GRID SECTION
     {
-      title: 'Text Image Grid Sections',
+      title: 'Platform section',
       name: 'textImageGridSections',
       type: 'array',
       group: 'landingPageGroup',
@@ -191,12 +191,14 @@ export const landingPage = {
               title: 'Color',
               name: 'color',
               type: 'string',
-              description: 'The color of the slide background',
+              description: 'The color of text',
               validation: (Rule: any) => Rule.required(),
               options: {
                 list: [
                   { title: 'Green', value: 'green' },
                   { title: 'Blue', value: 'blue' },
+                  { title: 'Cyan', value: 'cyan' },
+                  { title: 'Pink', value: 'pink' },
                   { title: 'Red', value: 'red' },
                 ],
               },
@@ -215,8 +217,14 @@ export const landingPage = {
               description: 'The title of the section, supports multiple lines.',
             },
             {
-              title: 'Text Area',
+              title: 'Text Area (Column 1)',
               name: 'textArea',
+              type: 'text',
+              description: 'A main text area for detailed content.',
+            },
+            {
+              title: 'Text Area (Column 2)',
+              name: 'textArea2',
               type: 'text',
               description: 'A main text area for detailed content.',
             },
@@ -260,7 +268,8 @@ export const landingPage = {
                     list: [
                       { title: 'Green', value: 'green' },
                       { title: 'Blue', value: 'blue' },
-                      { title: 'Purple', value: 'purple' },
+                      { title: 'Cyan', value: 'cyan' },
+                      { title: 'Pink', value: 'pink' },
                       { title: 'Red', value: 'red' },
                     ],
                   },
@@ -356,6 +365,9 @@ export const landingPage = {
                 list: [
                   { title: 'Green', value: 'green' },
                   { title: 'Blue', value: 'blue' },
+                  { title: 'Cyan', value: 'cyan' },
+                  { title: 'Pink', value: 'pink' },
+                  { title: 'Red', value: 'red' },
                 ],
               },
             },
@@ -391,9 +403,9 @@ export const landingPage = {
                   options: {
                     list: [
                       { title: 'Green', value: 'green' },
-                      { title: 'Light Blue', value: 'lightBlue' },
                       { title: 'Blue', value: 'blue' },
-                      { title: 'Purple', value: 'purple' },
+                      { title: 'Cyan', value: 'cyan' },
+                      { title: 'Pink', value: 'pink' },
                       { title: 'Red', value: 'red' },
                     ],
                   },

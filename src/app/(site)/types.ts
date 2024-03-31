@@ -19,7 +19,7 @@ export type SlideType = {
 export type LearnItemType = {
   _key: string;
   title: string;
-  image: ImageType;
+  image: any;
   imageUrl: string;
   description: string;
 };
@@ -30,6 +30,7 @@ export type TextImageGridSectionType = {
   byline: string;
   images: ImageType[];
   textArea: string;
+  textArea2: string;
   color: string;
 };
 

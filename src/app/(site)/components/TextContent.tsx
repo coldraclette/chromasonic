@@ -34,7 +34,7 @@ export default function TextContent({
         return (
           <Link
             className="underline"
-            href={value.href || ""}
+            href={value.href || ''}
             target={target}
             rel={rel}
           >
@@ -42,7 +42,6 @@ export default function TextContent({
           </Link>
         );
       },
-      // bold
       strong: ({ children }) => (
         <strong className="font-bold">{children}</strong>
       ),
@@ -52,8 +51,11 @@ export default function TextContent({
   return (
     <div
       className={cn(`${className}`, {
-        'text-softBlue3': color === 'blue',
-        'text-lightGreen3': color === 'green',
+        'text-green-100': color === 'green',
+        'text-blue-100': color === 'blue',
+        'text-red-100': color === 'red',
+        'text-pink-100': color === 'pink',
+        'text-cyan-100': color === 'cyan',
       })}
     >
       <PortableText value={text} components={components} />

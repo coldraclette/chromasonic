@@ -1,3 +1,5 @@
+'use client';
+
 import { motion } from 'framer-motion';
 
 import { cn } from '../../utils/utils';
@@ -16,64 +18,50 @@ export default function GridItemHeader({
   color,
 }: GridItemHeaderProps) {
   return (
-    <div className="px-5 lg:px-20">
-      <motion.h4
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, y: 20 },
-          visible: {
-            opacity: 1,
-            y: 0,
-            transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
-          },
-        }}
+    <motion.div
+      className="px-5 lg:px-10"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
+        },
+      }}
+    >
+      <h4
         className={cn(
           'font-body text-small-heading-mobile font-medium uppercase lg:text-small-heading',
           {
-            'text-brightGreen': color === 'green',
-            'text-vividBlue': color === 'blue',
-            'text-brightOrangeRed': color === 'red',
+            'text-green-400': color === 'green',
+            'text-blue-400': color === 'blue',
+            'text-red-400': color === 'red',
+            'text-pink-400': color === 'pink',
+            'text-cyan-400': color === 'cyan',
           }
         )}
       >
         {byline}
-      </motion.h4>
-      <motion.h3
-        className="flex flex-col"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, y: 20 },
-          visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-              duration: 0.8,
-              ease: [0.76, 0, 0.24, 1],
-              delay: 0.4,
-            },
-          },
-        }}
-      >
+      </h4>
+      <h3 className="text-heading2-small lg:text-heading2-medium xl:text-heading2-large flex flex-col">
         {title.map((title) => (
           <span
-            className={cn(
-              'font-heading text-[32px] uppercase leading-[30px] lg:text-[65px] lg:leading-[55px]',
-              {
-                'text-paleGreen': color === 'green',
-                'text-salmon': color === 'red',
-                'text-blue': color === 'blue',
-              }
-            )}
+            className={cn('font-heading uppercase', {
+              'text-green-200': color === 'green',
+              'text-blue-200': color === 'blue',
+              'text-red-200': color === 'red',
+              'text-pink-200': color === 'pink',
+              'text-cyan-200': color === 'cyan',
+            })}
             key={title}
           >
             {title}
           </span>
         ))}
-      </motion.h3>
-    </div>
+      </h3>
+    </motion.div>
   );
 }

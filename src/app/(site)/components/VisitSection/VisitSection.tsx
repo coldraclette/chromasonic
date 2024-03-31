@@ -1,11 +1,6 @@
-import Image from 'next/image';
-
-import { urlForImage } from '../../../../../sanity/lib/image';
 import { ImageType } from '../../types';
 import { cn } from '../../utils/utils';
-import Byline from '../Byline';
-import TextContent from '../TextContent';
-import VisitImage from './Image';
+import VisitImage from './VisitImage';
 import VisitText from './VisitText';
 
 interface VisitSectionProps {
@@ -26,13 +21,13 @@ export default function VisitSection({ data }: VisitSectionProps) {
     <div id="visit">
       {data.map((section) => (
         <div
-          className={cn(
-            'flex w-full flex-col',
-            {
-              'bg-darkPurple': section.color === 'blue',
-              'bg-darkGreen': section.color === 'green',
-            }
-          )}
+          className={cn('flex w-full flex-col lg:pb-[73px] ', {
+            'bg-green-500': section.color === 'green',
+            'bg-blue-500': section.color === 'blue',
+            'bg-red-500': section.color === 'red',
+            'bg-pink-500': section.color === 'pink',
+            'bg-cyan-500': section.color === 'cyan',
+          })}
           key={section._key}
         >
           <VisitImage image={section.image} />

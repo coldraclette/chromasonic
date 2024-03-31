@@ -1,15 +1,23 @@
+'use client';
+
 import { motion } from 'framer-motion';
 
 import { cn } from '../../utils/utils';
 
 interface GridItemTextProps {
   text: string;
+  text2: string;
   color: string;
 }
 
-export default function GridItemText({ text, color }: GridItemTextProps) {
+export default function GridItemText({
+  text,
+  text2,
+  color,
+}: GridItemTextProps) {
   return (
-    <motion.p
+    <motion.div
+      className="grid px-5 lg:grid-cols-2 lg:gap-10 lg:px-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
@@ -25,13 +33,29 @@ export default function GridItemText({ text, color }: GridItemTextProps) {
           },
         },
       }}
-      className={cn('px-5 font-body text-body-mobile lg:px-20 lg:text-body', {
-        'text-lightGreen2': color === 'green',
-        'text-softBlue2': color === 'blue',
-        'text-salmonLight': color === 'red',
-      })}
     >
-      {text}
-    </motion.p>
+      <p
+        className={cn('font-body text-body-mobile lg:text-body', {
+          'text-green-200': color === 'green',
+          'text-blue-200': color === 'blue',
+          'text-red-200': color === 'red',
+          'text-pink-200': color === 'pink',
+          'text-cyan-200': color === 'cyan',
+        })}
+      >
+        {text}
+      </p>
+      <p
+        className={cn('font-body text-body-mobile lg:text-body', {
+          'text-green-200': color === 'green',
+          'text-blue-200': color === 'blue',
+          'text-red-200': color === 'red',
+          'text-pink-200': color === 'pink',
+          'text-cyan-200': color === 'cyan',
+        })}
+      >
+        {text2}
+      </p>
+    </motion.div>
   );
 }
