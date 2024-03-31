@@ -7,6 +7,7 @@ import localFont from 'next/font/local';
 import { getPageSettings } from '../../../sanity/sanity.query';
 import CookieConsentBanner from './components/CookieConsentBanner';
 import Footer from './components/Footer/Footer';
+import GoogleTag from './components/GoogleTag';
 import Header from './components/Header/Header';
 
 const soehneBreit = localFont({
@@ -60,6 +61,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${soehneBreit.variable} ${soehne.variable}`}>
+        <GoogleTag trackingId="UA-189690288-3" />
         <Header ticketLink={ticketLink} />
         {children}
         <Footer data={footerData} />
