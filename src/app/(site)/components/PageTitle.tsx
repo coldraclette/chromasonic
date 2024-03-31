@@ -20,7 +20,7 @@ export default function PageTitle({ title }: PageTitleProps) {
           transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
         },
       }}
-      className="text-salmon2 text-[39px] leading-[40px] lg:text-[85px] lg:leading-[80px]"
+      className="font-heading text-[39px] leading-[40px] text-red-200 lg:text-[85px] lg:leading-[80px]"
     >
       {title}
     </motion.h2>

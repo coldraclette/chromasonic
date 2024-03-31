@@ -35,6 +35,7 @@ const config: Config = {
       'red-300': '#FF5543',
       'red-200': '#FF8070',
       'red-100': '#FFB6AE',
+      'red-50': '#FED4D0',
 
       'blue-500': '#4208D5',
       'blue-400': '#0253FF',

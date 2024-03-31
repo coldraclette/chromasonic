@@ -7,7 +7,7 @@ export default async function Page() {
   const data = await getFaqPageData();
 
   return (
-    <div className="bg-deepPink">
+    <div className="bg-red-500">
       <BackgroundImagePage image={data.image} />
       <div className="p-5 lg:px-10 lg:pt-11">
         <PageTitle title={data.title} />
