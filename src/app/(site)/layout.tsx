@@ -10,6 +10,8 @@ import Footer from './components/Footer/Footer';
 import GoogleTag from './components/GoogleTag';
 import Header from './components/Header/Header';
 
+export const revalidate = 60;
+
 const soehneBreit = localFont({
   display: 'swap',
   variable: '--font-soehne-breit',

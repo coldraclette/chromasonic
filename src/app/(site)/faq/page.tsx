@@ -3,6 +3,8 @@ import AccordionGrid from '../components/AccordionGrid';
 import BackgroundImagePage from '../components/BackgroundImagePage';
 import PageTitle from '../components/PageTitle';
 
+export const revalidate = 60;
+
 export default async function Page() {
   const data = await getFaqPageData();
 

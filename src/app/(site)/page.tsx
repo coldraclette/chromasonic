@@ -5,6 +5,8 @@ import QuoteSection from './components/QuoteSection/QuoteSection';
 import TextImageGridSection from './components/TextImageGridSection/TextImageGridSection';
 import VisitSection from './components/VisitSection/VisitSection';
 
+export const revalidate = 60;
+
 export default async function Home() {
   const {
     heroSection,
