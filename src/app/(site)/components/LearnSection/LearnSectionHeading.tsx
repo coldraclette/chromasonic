@@ -2,8 +2,6 @@
 
 import { motion } from 'framer-motion';
 
-import Byline from '../Byline';
-
 interface LearnSectionHeadingProps {
   byline: string;
   titleLine1: string;
@@ -29,7 +27,9 @@ export default function LearnSectionHeading({
         },
       }}
     >
-      <Byline text={byline} color="text-blue-400" />
+      <h2 className="text-small-heading-mobile font-medium uppercase text-blue-400 lg:text-small-heading">
+        {byline}
+      </h2>
       <h3 className="text-heading2-small lg:text-heading2-medium xl:text-heading2-large flex flex-col pt-1 font-heading">
         <span className="text-blue-300">{titleLine1}</span>
         <span className="text-blue-200">{titleLine2}</span>

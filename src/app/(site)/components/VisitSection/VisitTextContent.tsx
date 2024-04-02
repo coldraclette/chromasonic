@@ -37,7 +37,7 @@ export default function VisitTextContent({
     >
       <p
         className={cn(
-          'font-body text-[14px] font-medium leading-[16px] lg:text-[22px] lg:leading-[28px]',
+          'font-body text-body-mobile text-blue-100 lg:text-body lg:font-medium',
           {
             'text-green-100': color === 'green',
             'text-blue-100': color === 'blue',
