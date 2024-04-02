@@ -12,7 +12,7 @@ export default function BackgroundImagePage({
 }: BackgroundImagePageProps) {
   return (
     <div className="relative h-[230px] lg:h-[535px]">
-      <div className="absolute top-20 z-10 flex h-10 w-full justify-center px-5 lg:top-11 lg:h-12">
+      <div className="absolute top-20 z-10 flex h-10 w-full justify-center px-5 lg:top-11">
         <LogoRed />
       </div>
       <Image

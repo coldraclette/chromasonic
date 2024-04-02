@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 import { TextProps } from '../../types';
@@ -54,9 +55,9 @@ export default function Footer({ data }: FooterProps) {
             contact={data.contactLink}
           />
         </div>
-        <div className="w-full">
+        <Link href="/" className="w-full">
           <LogoGreen />
-        </div>
+        </Link>
       </motion.div>
     </div>
   );

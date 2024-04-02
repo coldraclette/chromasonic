@@ -72,7 +72,7 @@ export default function VisitTextHeader({
       </h3>
       <p
         className={cn(
-          'font-body text-[14px] uppercase leading-[20px] lg:text-[22px] lg:leading-[36px]',
+          'font-kraftig text-[14px] uppercase leading-[20px] tracking-[0.66px] lg:text-[22px] lg:leading-[36px]',
           {
             'text-green-200': color === 'green',
             'text-blue-200': color === 'blue',

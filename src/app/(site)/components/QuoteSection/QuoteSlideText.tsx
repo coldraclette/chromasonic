@@ -44,7 +44,7 @@ export default function QuoteSlideText({ isEven, slide }: QuoteSlideTextProps) {
   return (
     <div
       className={cn(
-        'absolute z-10 flex h-full flex-col justify-between p-10 lg:relative',
+        'absolute z-10 flex h-full flex-col justify-between p-5 lg:p-10 lg:relative',
         {
           'order-1': !isEven,
           'order-2': isEven,

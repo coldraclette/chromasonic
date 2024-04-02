@@ -46,6 +46,28 @@ const soehne = localFont({
   ],
 });
 
+const soehneKraftig = localFont({
+  display: 'swap',
+  variable: '--font-soehne-kraftig',
+  src: [
+    {
+      path: './fonts/soehne-kraftig.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/soehne-kraftig.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './fonts/soehne-kraftig.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+});
+
 export const metadata: Metadata = {
   title: 'Chromasonic',
   description:
@@ -63,7 +85,9 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${soehneBreit.variable} ${soehne.variable}`}>
+      <body
+        className={`${soehneBreit.variable} ${soehne.variable} ${soehneKraftig.variable}`}
+      >
         <GoogleTag trackingId="UA-189690288-3" />
         <Header ticketLink={ticketLink} />
         {children}

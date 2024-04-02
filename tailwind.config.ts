@@ -10,6 +10,7 @@ const config: Config = {
     fontFamily: {
       heading: ['var(--font-soehne-breit)', 'sans-serif'],
       body: ['var(--font-soehne)', 'sans-serif'],
+      kraftig: ['var(--font-soehne-kraftig)', 'sans-serif'],
     },
     colors: {
       transparent: 'transparent',

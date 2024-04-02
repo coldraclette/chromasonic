@@ -33,7 +33,7 @@ export default function VisitTextContent({
           },
         },
       }}
-      className="grid gap-10 lg:grid-cols-2"
+      className="grid gap-[42px] lg:grid-cols-2"
     >
       <p
         className={cn(
@@ -52,7 +52,7 @@ export default function VisitTextContent({
       <TextContent
         text={text}
         color={color}
-        className="font-body text-[14px] font-medium uppercase leading-[16px] lg:text-[22px] lg:leading-[24px]"
+        className="font-kraftig tracking-[0.66px] text-[14px] uppercase leading-[16px] lg:text-[22px] lg:leading-[24px]"
       />
     </motion.div>
   );

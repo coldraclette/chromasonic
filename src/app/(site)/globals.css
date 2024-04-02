@@ -20,6 +20,10 @@ h2,
   @apply text-heading-small lg:text-heading-big;
 }
 
+.hero {
+  @apply lg:text-[60px] lg:leading-[52px];
+}
+
 p {
   @apply font-body;
 }
@@ -38,4 +42,8 @@ p {
 
 .splide__pagination__page.is-active {
   transform: scale(1) !important;
+}
+
+.social-icon:hover path {
+  fill: #22ff48;
 }

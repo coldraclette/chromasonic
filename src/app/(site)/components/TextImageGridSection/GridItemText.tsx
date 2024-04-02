@@ -17,7 +17,7 @@ export default function GridItemText({
 }: GridItemTextProps) {
   return (
     <motion.div
-      className="grid px-5 lg:grid-cols-2 lg:gap-10 lg:px-10"
+      className="grid px-5 lg:grid-cols-2 lg:gap-[42px] lg:px-10"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}

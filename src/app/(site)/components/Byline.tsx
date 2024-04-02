@@ -5,7 +5,7 @@ interface BylineProps {
 
 export default function Byline({ text, color }: BylineProps) {
   return (
-    <h2 className={`text-byline lg:text-byline font-body font-medium ${color}`}>
+    <h2 className={`text-byline lg:text-byline font-body uppercase font-medium ${color}`}>
       {text}
     </h2>
   );
