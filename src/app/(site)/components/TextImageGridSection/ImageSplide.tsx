@@ -35,8 +35,6 @@ export default function ImageSplide({ images }: ImageSplideProps) {
         options={{
           type: 'loop',
           perPage: 1,
-          autoplay: true,
-          interval: 4000,
           arrows: false,
         }}
       >
