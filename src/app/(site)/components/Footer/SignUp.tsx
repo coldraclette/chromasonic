@@ -30,7 +30,7 @@ export default function SignUp({ signUpText, investorText }: SignUpProps) {
   return (
     <div className="max-w-96 space-y-8">
       <div>
-        <p className="text-lg font-bold uppercase text-green-100">
+        <p className="font-kraftig text-lg font-bold uppercase tracking-[0.42px] lg:tracking-[0.66px] text-green-100">
           {signUpText}
         </p>
         <form
@@ -47,7 +47,7 @@ export default function SignUp({ signUpText, investorText }: SignUpProps) {
           />
           <button
             type="submit"
-            className="flex w-full flex-1 items-center gap-1 text-green-100 hover:text-green-300"
+            className="font-kraftig flex w-full flex-1 items-center gap-1 text-green-100 hover:text-green-300"
           >
             <span>SUBMIT</span>
             <svg
@@ -69,7 +69,7 @@ export default function SignUp({ signUpText, investorText }: SignUpProps) {
       </div>
 
       <div>
-        <p className="text-lg font-bold uppercase text-green-100">
+        <p className="font-kraftig text-lg font-bold uppercase tracking-[0.42px] text-green-100 lg:tracking-[0.66px]">
           {investorText}
         </p>
         <form
@@ -86,7 +86,7 @@ export default function SignUp({ signUpText, investorText }: SignUpProps) {
           />
           <button
             type="submit"
-            className="flex w-full flex-1 items-center gap-1 text-green-100 hover:text-green-300"
+            className="font-kraftig flex w-full flex-1 items-center gap-1 text-green-100 hover:text-green-300"
           >
             <span>SUBMIT</span>
             <svg

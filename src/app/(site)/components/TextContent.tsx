@@ -33,7 +33,13 @@ export default function TextContent({
         const target = !value?.href?.startsWith('/') ? '_blank' : undefined;
         return (
           <Link
-            className="underline"
+            className={cn('underline transition-colors', {
+              'hover:text-green-300': color === 'green',
+              'hover:text-blue-300': color === 'blue',
+              'hover:text-red-300': color === 'red',
+              'hover:text-pink-300': color === 'pink',
+              'hover:text-cyan-300': color === 'cyan',
+            })}
             href={value.href || ''}
             target={target}
             rel={rel}

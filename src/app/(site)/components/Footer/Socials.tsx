@@ -13,7 +13,9 @@ export default function Socials({
   return (
     <div className="flex flex-col gap-8">
       <div>
-        <p className="text-lg font-bold uppercase text-green-100">contact</p>
+        <p className="font-kraftig text-lg font-bold uppercase tracking-[0.42px] text-green-100 lg:tracking-[0.66px]">
+          contact
+        </p>
         <a
           href={`mailto:${contact}`}
           className="text-green-100 hover:text-green-300"
@@ -23,7 +25,7 @@ export default function Socials({
       </div>
       <div className="flex flex-col gap-[22.6px]">
         <Link
-          className="text-lg font-bold text-green-100 hover:text-green-300"
+          className="font-kraftig text-lg font-bold tracking-[0.42px] text-green-100 hover:text-green-300 lg:tracking-[0.66px]"
           href="/faq"
         >
           FAQ
