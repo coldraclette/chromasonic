@@ -23,7 +23,7 @@ export default function Socials({
           {contact}
         </a>
       </div>
-      <div className="flex flex-col gap-[22.6px]">
+      <div className="flex flex-col gap-8">
         <Link
           className="font-kraftig text-[14px] font-bold uppercase leading-[16px] tracking-[0.66px] text-green-100 lg:text-lg lg:leading-[24px] lg:tracking-[0.66px]"
           href="/faq"

@@ -12,7 +12,7 @@ interface LearnSectionItemsProps {
 
 export default function LearnSectionItems({ items }: LearnSectionItemsProps) {
   return (
-    <div className="flex flex-col gap-11 lg:flex-row lg:gap-10">
+    <div className="flex flex-col gap-11 lg:grid lg:grid-cols-3 lg:gap-10">
       {items.map((item, index) => {
         return (
           <motion.div
@@ -28,11 +28,11 @@ export default function LearnSectionItems({ items }: LearnSectionItemsProps) {
               },
             }}
             key={item._key}
-            className="flex items-center justify-center lg:justify-start gap-6 lg:flex-col lg:gap-12 lg:text-center"
+            className="flex items-center justify-center gap-6 lg:flex-col lg:justify-start lg:gap-12 lg:text-center"
           >
             <div
               className={cn(
-                'relative flex w-1/2 items-center lg:w-auto lg:h-[261px]',
+                'relative flex w-1/2 items-center lg:h-[261px] lg:w-auto',
                 {
                   'order-2 lg:order-none': index === 1,
                 }
@@ -54,7 +54,7 @@ export default function LearnSectionItems({ items }: LearnSectionItemsProps) {
               <h4 className="text-heading3-mobile lg:text-heading3 font-heading uppercase text-blue-100">
                 {item.title}
               </h4>
-              <p className="font-body text-[15.3px] text-body-mobile text-blue-100 lg:px-10 lg:text-[17.6px] lg:text-body ">
+              <p className="font-body text-xs text-blue-100 lg:px-10 lg:text-[17.6px] lg:text-body ">
                 {item.description}
               </p>
             </div>

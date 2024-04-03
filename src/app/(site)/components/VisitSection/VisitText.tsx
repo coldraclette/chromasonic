@@ -19,7 +19,7 @@ export default function VisitText({
   color,
 }: VisitTextProps) {
   return (
-    <div className="flex flex-col justify-between gap-[130px] px-5 pb-11 pt-10 lg:px-10 lg:pb-0">
+    <div className="flex flex-col justify-between gap-[130px] px-5 pb-11 pt-8 lg:pt-10 lg:px-10 lg:pb-0">
       <VisitTextHeader
         byline={byline}
         titleLines={titleLines}
