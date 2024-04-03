@@ -38,7 +38,7 @@ export default function Accordion({ title, text }: AccordionProps) {
       </h3>
       <div
         className={`transition-max-height overflow-hidden duration-500 ease-in-out ${
-          isOpen ? 'max-h-96' : 'max-h-0'
+          isOpen ? 'max-h-[800px]' : 'max-h-0'
         }`}
       >
         <p className="text-red-50 pb-4 font-body lg:text-[22px] lg:leading-[28.5px]">
