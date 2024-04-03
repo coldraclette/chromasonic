@@ -51,6 +51,9 @@ const config: Config = {
       'green-100': '#9CFFAD',
     },
     extend: {
+      aspectRatio: {
+        '4/5': '4 / 5',
+      },
       fontSize: {
         'heading-big': [
           '75px',

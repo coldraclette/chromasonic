@@ -27,7 +27,7 @@ export default function VisitImage({ image }: VisitImageProps) {
           },
         },
       }}
-      className="relative order-2 h-[280px] w-full lg:order-none lg:h-[60vh] lg:min-h-[650px]"
+      className="relative h-[280px] w-full lg:h-[60vh] lg:min-h-[650px]"
     >
       <Image
         src={urlForImage(image)}

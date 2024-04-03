@@ -28,10 +28,6 @@ p {
   @apply font-body;
 }
 
-.image-mix-blend-mode:before {
-  content: '';
-}
-
 .splide__pagination {
   bottom: 16px !important;
 }

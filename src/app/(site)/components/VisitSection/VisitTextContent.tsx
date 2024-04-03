@@ -33,26 +33,25 @@ export default function VisitTextContent({
           },
         },
       }}
-      className="grid gap-[42px] lg:grid-cols-2"
+      className="grid gap-11 lg:grid-cols-2"
     >
-      <p
-        className={cn(
-          'font-body text-body-mobile lg:text-body lg:font-medium',
-          {
+      <p className="font-body text-body-mobile lg:text-body lg:font-medium">
+        <span
+          className={cn('', {
             'text-green-100': color === 'green',
             'text-blue-100': color === 'blue',
             'text-red-100': color === 'red',
             'text-pink-100': color === 'pink',
             'text-cyan-100': color === 'cyan',
-          }
-        )}
-      >
-        {textArea}
+          })}
+        >
+          {textArea}
+        </span>
       </p>
       <TextContent
         text={text}
         color={color}
-        className="font-kraftig tracking-[0.66px] text-[14px] uppercase leading-[16px] lg:text-[22px] lg:leading-[24px]"
+        className="font-kraftig text-[14px] uppercase leading-[16px] tracking-[0.66px] lg:text-[22px] lg:leading-[24px]"
       />
     </motion.div>
   );

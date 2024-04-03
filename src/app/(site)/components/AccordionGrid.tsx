@@ -30,7 +30,7 @@ export default function AccordionGrid({ faqItems }: AccordionGridProps) {
           ))}
         </div>
       </div>
-      <div className="grid  lg:hidden">
+      <div className="grid lg:hidden">
         {faqItems.map((item) => (
           <Accordion key={item._key} title={item.question} text={item.answer} />
         ))}

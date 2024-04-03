@@ -2,6 +2,7 @@
 
 import '@splidejs/react-splide/css';
 
+import { useRef } from 'react';
 import Image from 'next/image';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { motion } from 'framer-motion';
@@ -14,6 +15,12 @@ interface ImageSplideProps {
 }
 
 export default function ImageSplide({ images }: ImageSplideProps) {
+  const splideRef = useRef(null);
+
+  const handleSlideClick = () => {
+    splideRef.current.splide.go('>');
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -32,6 +39,7 @@ export default function ImageSplide({ images }: ImageSplideProps) {
       className="pb-5 pt-[14px] lg:pb-11 lg:pt-[50px]"
     >
       <Splide
+        ref={splideRef}
         options={{
           type: 'loop',
           perPage: 1,
@@ -41,7 +49,8 @@ export default function ImageSplide({ images }: ImageSplideProps) {
         {images.map((image: ImageType) => (
           <SplideSlide
             key={image._key}
-            className="h-52 w-full lg:h-[70vh] lg:min-h-[600px]"
+            className="aspect-4/5 w-full cursor-pointer lg:aspect-auto lg:h-[80vh] lg:min-h-[600px]"
+            onClick={handleSlideClick}
           >
             <Image
               src={urlForImage(image)}

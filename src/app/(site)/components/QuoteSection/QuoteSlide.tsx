@@ -34,11 +34,7 @@ export default function QuoteSlide({ slide, index }: QuoteSlideProps) {
       )}
       viewport={{ once: true, amount: 0.5 }}
     >
-      <QuoteSlideImage
-        image={slide.image}
-        isEven={isEven}
-        color={slide.color}
-      />
+      <QuoteSlideImage image={slide.image} isEven={isEven} />
       <QuoteSlideText slide={slide} isEven={isEven} />
     </motion.div>
   );

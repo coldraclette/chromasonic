@@ -34,27 +34,31 @@ export default function GridItemText({
         },
       }}
     >
-      <p
-        className={cn('font-body text-body-mobile lg:text-body', {
-          'text-green-200': color === 'green',
-          'text-blue-200': color === 'blue',
-          'text-red-200': color === 'red',
-          'text-pink-200': color === 'pink',
-          'text-cyan-200': color === 'cyan',
-        })}
-      >
-        {text}
+      <p className="font-body text-body-mobile lg:text-body">
+        <span
+          className={cn('', {
+            'text-green-200': color === 'green',
+            'text-blue-200': color === 'blue',
+            'text-red-200': color === 'red',
+            'text-pink-200': color === 'pink',
+            'text-cyan-200': color === 'cyan',
+          })}
+        >
+          {text}
+        </span>
       </p>
-      <p
-        className={cn('font-body text-body-mobile lg:text-body', {
-          'text-green-200': color === 'green',
-          'text-blue-200': color === 'blue',
-          'text-red-200': color === 'red',
-          'text-pink-200': color === 'pink',
-          'text-cyan-200': color === 'cyan',
-        })}
-      >
-        {text2}
+      <p className="font-body text-body-mobile lg:text-body">
+        <span
+          className={cn('', {
+            'text-green-200': color === 'green',
+            'text-blue-200': color === 'blue',
+            'text-red-200': color === 'red',
+            'text-pink-200': color === 'pink',
+            'text-cyan-200': color === 'cyan',
+          })}
+        >
+          {text2}
+        </span>
       </p>
     </motion.div>
   );

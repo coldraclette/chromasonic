@@ -11,6 +11,9 @@ export default function Header({ ticketLink }) {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  const menuItemClasses =
+    'mb-4 font-heading text-big-heading-mobile uppercase leading-[30px] text-grey transition-colors hover:text-[#656565] lg:text-big-heading lg:text-lightGrey';
+
   return (
     <div className="fixed left-0 top-8 z-20 flex w-full justify-between px-5 lg:top-11 lg:px-10">
       <div
@@ -54,45 +57,29 @@ export default function Header({ ticketLink }) {
           >
             close
           </div>
-          <div className="absolute left-1/2 top-20 z-10 flex h-10 -translate-x-1/2 justify-center px-5 lg:top-11">
+          <div className="absolute left-1/2 top-20 z-10 hidden h-10 -translate-x-1/2 justify-center px-5 lg:top-11 lg:flex">
             <LogoBlack />
           </div>
         </div>
 
         <div className="flex h-full flex-col text-white">
-          <Link
-            onClick={toggleMenu}
-            className="mb-4 font-heading text-big-heading-mobile uppercase text-grey transition-colors hover:text-[#656565] lg:text-big-heading lg:text-lightGrey"
-            href="/"
-          >
+          <Link onClick={toggleMenu} className={menuItemClasses} href="/">
             Home
           </Link>
-          <Link
-            onClick={toggleMenu}
-            className="mb-4 font-heading text-big-heading-mobile uppercase text-grey transition-colors hover:text-[#656565] lg:text-big-heading lg:text-lightGrey"
-            href="/#learn"
-          >
+          <Link onClick={toggleMenu} className={menuItemClasses} href="/#learn">
             learn
           </Link>
-          <Link
-            onClick={toggleMenu}
-            className="mb-4 font-heading text-big-heading-mobile uppercase text-grey transition-colors hover:text-[#656565] lg:text-big-heading lg:text-lightGrey"
-            href="/#visit"
-          >
+          <Link onClick={toggleMenu} className={menuItemClasses} href="/#visit">
             visit
           </Link>
           <Link
             onClick={toggleMenu}
-            className="mb-4 font-heading text-big-heading-mobile uppercase text-grey transition-colors hover:text-[#656565] lg:text-big-heading lg:text-lightGrey"
+            className={menuItemClasses}
             href="/#connect"
           >
             connect
           </Link>
-          <Link
-            onClick={toggleMenu}
-            className="mb-4 font-heading text-big-heading-mobile uppercase text-grey transition-colors hover:text-[#656565] lg:text-big-heading lg:text-lightGrey"
-            href="/faq"
-          >
+          <Link onClick={toggleMenu} className={menuItemClasses} href="/faq">
             faq
           </Link>
         </div>
