@@ -54,7 +54,7 @@ export default function LearnSectionItems({ items }: LearnSectionItemsProps) {
               <h4 className="font-heading text-heading3-mobile uppercase text-blue-100 lg:text-heading3">
                 {item.title}
               </h4>
-              <p className="font-body text-[12.6px] text-xs text-blue-100 lg:px-10  lg:text-[18px] lg:leading-[28px] ">
+              <p className="font-body text-[12.6px] text-xs text-blue-100 lg:px-10  lg:text-[18px] lg:leading-[24px] ">
                 {item.description}
               </p>
             </div>
