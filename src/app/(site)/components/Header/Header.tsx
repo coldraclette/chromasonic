@@ -12,7 +12,7 @@ export default function Header({ ticketLink }) {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const menuItemClasses =
-    'mb-4 font-heading text-big-heading-mobile uppercase leading-[30px] text-grey transition-colors hover:text-[#656565] lg:text-big-heading lg:text-lightGrey';
+    'mb-4 font-heading text-big-heading-mobile uppercase leading-[27px] text-grey transition-colors hover:text-[#656565] lg:leading-[55.1px] lg:tracking-[0.02rem] lg:text-[75px] lg:text-lightGrey';
 
   return (
     <div className="fixed left-0 top-8 z-20 flex w-full justify-between px-5 lg:top-11 lg:px-10">

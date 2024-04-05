@@ -19,7 +19,7 @@ export default function QuoteSlideImage({
         src={urlForImage(image)}
         alt="Slide image"
         fill
-        className="z-[1] h-full w-full object-cover mix-blend-luminosity"
+        className="z-[1] h-full w-full object-cover"
       />
     </div>
   );

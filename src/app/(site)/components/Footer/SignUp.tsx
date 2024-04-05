@@ -46,23 +46,23 @@ export default function SignUp({ signUpText, investorText }: SignUpProps) {
           />
           <button
             type="submit"
-            className="font-kraftig flex w-full flex-1 items-center gap-1 text-[14px] font-bold uppercase leading-[16px] tracking-[0.66px] text-green-100 hover:text-green-300 lg:text-lg lg:leading-[24px] lg:tracking-[0.66px]"
+            className="submit-button flex w-full flex-1 items-center gap-1 font-kraftig text-[14px] font-bold uppercase leading-[16px] tracking-[0.66px] text-green-100 hover:text-green-300 lg:text-lg lg:leading-[24px] lg:tracking-[0.66px]"
           >
             <span>SUBMIT</span>
-            <svg
-              width="11"
-              height="11"
-              viewBox="0 0 11 11"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                id="Vector 15"
-                d="M0 5.71429H9M9 5.71429L4.90909 1M9 5.71429L4.90909 10"
-                stroke="#75FF8C"
-                strokeWidth="1.5"
-              />
-            </svg>
+            <div className="h-[11px] w-[11px] lg:h-[12.65px] lg:w-[12.65px]">
+              <svg
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  id="Vector 15"
+                  d="M0 5.71429H9M9 5.71429L4.90909 1M9 5.71429L4.90909 10"
+                  stroke="#75FF8C"
+                  strokeWidth="1.5"
+                />
+              </svg>
+            </div>
           </button>
         </form>
       </div>
@@ -85,23 +85,23 @@ export default function SignUp({ signUpText, investorText }: SignUpProps) {
           />
           <button
             type="submit"
-            className="font-kraftig flex w-full flex-1 items-center gap-1 text-[14px] font-bold uppercase leading-[16px] tracking-[0.66px] text-green-100 hover:text-green-300 lg:text-lg lg:leading-[24px] lg:tracking-[0.66px]"
+            className="flex w-full flex-1 items-center gap-1 font-kraftig text-[14px] font-bold uppercase leading-[16px] tracking-[0.66px] text-green-100 hover:text-green-300 submit-button lg:text-lg lg:leading-[24px] lg:tracking-[0.66px]"
           >
             <span>SUBMIT</span>
-            <svg
-              width="11"
-              height="11"
-              viewBox="0 0 11 11"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                id="Vector 15"
-                d="M0 5.71429H9M9 5.71429L4.90909 1M9 5.71429L4.90909 10"
-                stroke="#75FF8C"
-                strokeWidth="1.5"
-              />
-            </svg>
+            <div className="h-[11px] w-[11px] lg:h-[12.65px] lg:w-[12.65px]">
+              <svg
+                viewBox="0 0 11 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  id="Vector 15"
+                  d="M0 5.71429H9M9 5.71429L4.90909 1M9 5.71429L4.90909 10"
+                  stroke="#75FF8C"
+                  strokeWidth="1.5"
+                />
+              </svg>
+            </div>
           </button>
         </form>
       </div>

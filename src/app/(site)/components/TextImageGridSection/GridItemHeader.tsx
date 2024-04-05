@@ -34,7 +34,7 @@ export default function GridItemHeader({
     >
       <h4
         className={cn(
-          'font-body text-small-heading-mobile font-medium uppercase lg:text-small-heading',
+          'text-small-heading-mobile font-kraftig font-medium uppercase lg:text-small-heading',
           {
             'text-green-400': color === 'green',
             'text-blue-400': color === 'blue',
@@ -46,7 +46,7 @@ export default function GridItemHeader({
       >
         {byline}
       </h4>
-      <h3 className="text-heading2-small lg:text-heading2-medium xl:text-heading2-large flex flex-col">
+      <h3 className="text-heading2-small leading-[34px] lg:text-heading2-medium xl:text-heading2-large flex flex-col">
         {title.map((title) => (
           <span
             className={cn('font-heading uppercase', {

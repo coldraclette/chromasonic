@@ -36,7 +36,7 @@ export default function VisitTextHeader({
         },
       }}
     >
-      <h2 className="text-small-heading-mobile font-medium uppercase lg:text-small-heading">
+      <h2 className="font-kraftig text-small-heading-mobile font-medium uppercase lg:text-small-heading">
         <span
           className={cn('', {
             'text-green-400': color === 'green',
@@ -49,7 +49,7 @@ export default function VisitTextHeader({
           {byline}
         </span>
       </h2>
-      <h3 className="flex flex-col font-heading text-[39px] leading-[38px] lg:text-[85px] lg:leading-[75px]">
+      <h2 className="flex flex-col font-heading text-[39px] leading-[38px] h2">
         {titleLines.map((line, index) => (
           <span
             key={index}
@@ -69,7 +69,7 @@ export default function VisitTextHeader({
             {line}
           </span>
         ))}
-      </h3>
+      </h2>
       <p
         className={cn(
           'font-kraftig text-[14px] uppercase leading-[20px] tracking-[0.66px] lg:text-[22px] lg:leading-[36px]',
