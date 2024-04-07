@@ -27,7 +27,7 @@ export default function LearnSectionHeading({
         },
       }}
     >
-      <h2 className="text-small-heading-mobile font-medium font-kraftig uppercase text-blue-400 lg:text-small-heading">
+      <h2 className="text-small-heading-mobile text-[16px] font-medium font-kraftig uppercase text-blue-400 lg:text-small-heading">
         {byline}
       </h2>
       <h3 className="text-heading2-small leading-[34px] lg:text-heading2-medium xl:text-heading2-large flex flex-col pt-1 font-heading">

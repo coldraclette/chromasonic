@@ -31,7 +31,7 @@ export default function HeroTextMobile({ textLines }: HeroTextMobileProps) {
                   hidden: { opacity: 0 },
                   visible: { opacity: 1 },
                 }}
-                className={`block font-heading uppercase ${colorClass}`}
+                className={`block font-heading text-[29px] uppercase ${colorClass}`}
               >
                 {word}
               </motion.span>

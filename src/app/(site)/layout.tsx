@@ -81,7 +81,11 @@ export default async function RootLayout({
 }>) {
   const pageSettingsData = await getPageSettings();
 
-  const { Footer: footerData, ticketLink } = pageSettingsData;
+  const {
+    Footer: footerData,
+    ticketLink,
+    CookieBanner: cookiebannerData,
+  } = pageSettingsData;
 
   return (
     <html lang="en">
@@ -92,7 +96,7 @@ export default async function RootLayout({
         <Header ticketLink={ticketLink} />
         {children}
         <Footer data={footerData} />
-        <CookieConsentBanner />
+        <CookieConsentBanner data={cookiebannerData} />
       </body>
     </html>
   );

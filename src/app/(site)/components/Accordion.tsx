@@ -28,11 +28,11 @@ export default function Accordion({ title, text }: AccordionProps) {
           transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.3 },
         },
       }}
-      className="border-red-50 border-b"
+      className="border-b border-red-50"
     >
       <h3
         onClick={toggleAccordion}
-        className="text-red-50 font-kraftig flex cursor-pointer items-center justify-between py-4 lg:py-[19.2px] lg:text-[22px] lg:leading-[28.5px]"
+        className="flex cursor-pointer items-center justify-between py-4 font-kraftig leading-[1.313rem] text-red-50 lg:py-[19.2px] lg:text-[22px] lg:leading-[28.5px]"
       >
         {title}
       </h3>
@@ -41,7 +41,7 @@ export default function Accordion({ title, text }: AccordionProps) {
           isOpen ? 'max-h-[800px]' : 'max-h-0'
         }`}
       >
-        <p className="text-red-50 pb-4 lg:pb-[19.2px] font-body lg:text-[22px] lg:leading-[28.5px]">
+        <p className="pb-4 font-body leading-[1.313rem] text-red-50 lg:pb-[19.2px] lg:text-[22px] lg:leading-[28.5px]">
           {text}
         </p>
       </div>

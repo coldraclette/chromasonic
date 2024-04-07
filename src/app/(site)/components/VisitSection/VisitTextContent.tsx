@@ -51,7 +51,7 @@ export default function VisitTextContent({
       <TextContent
         text={text}
         color={color}
-        className="font-kraftig text-[14px] uppercase leading-[16px] tracking-[0.66px] lg:text-[22px] lg:leading-[24px]"
+        className="font-kraftig text-[16px] uppercase leading-[16px] tracking-[0.66px] lg:text-[22px] lg:leading-[24px]"
       />
     </motion.div>
   );

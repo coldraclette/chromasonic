@@ -6,7 +6,7 @@ import cookie from 'js-cookie';
 
 import CloseIcon from '/public/closeIcon.svg';
 
-const CookieConsentBanner = () => {
+const CookieConsentBanner = ({ data }) => {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
@@ -44,7 +44,7 @@ const CookieConsentBanner = () => {
             transition: { duration: 0.3, ease: [0.76, 0, 0.24, 1], delay: 1.5 },
           },
         }}
-        className="relative flex flex-col justify-between gap-8 bg-white px-5 py-[17px] lg:flex-row lg:gap-4 lg:px-[28px] lg:pb-[28px] lg:pt-[11px]"
+        className="relative flex flex-col justify-between gap-8 bg-black px-5 py-[17px] lg:flex-row lg:gap-4 lg:px-[28px] lg:pb-[28px] lg:pt-[11px]"
       >
         <div
           onClick={handleReject}
@@ -53,25 +53,24 @@ const CookieConsentBanner = () => {
           <CloseIcon />
         </div>
         <div className="flex flex-col gap-8">
-          <p className="font-heading text-[18px] lg:text-[32px] lg:leading-[58px]">
-            A NOTE ON PRIVACY
+          <p className="font-heading text-[18px] uppercase text-white lg:text-[32px] lg:leading-[58px]">
+            {data.title}
           </p>
 
-          <p className="max-w-[768px] font-body text-[15px] leading-[22px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p className="max-w-[768px] font-body text-[15px] leading-[22px] text-white">
+            {data.text}
           </p>
         </div>
         <div className="flex w-full items-end gap-4 lg:w-auto">
           <div className="flex w-full flex-col lg:flex-row">
             <button
-              className="w-full bg-[#333] p-5 uppercase text-white lg:w-[212px]"
+              className="text-back w-full bg-white p-5 uppercase lg:w-[212px]"
               onClick={handleAccept}
             >
               Accept all cookies
             </button>
             <button
-              className="w-full p-5 font-bold uppercase underline lg:w-[200px]"
+              className="w-full p-5 font-bold uppercase text-white underline lg:w-[200px]"
               onClick={handleReject}
             >
               DECLINE

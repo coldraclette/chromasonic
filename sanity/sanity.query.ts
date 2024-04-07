@@ -29,7 +29,8 @@ export async function getPageSettings() {
   const query = `
     *[_type == "pageSettings"][0] {
       ticketLink,
-      Footer
+      Footer,
+      CookieBanner
     }
   `;
   const data = await client.fetch(query);

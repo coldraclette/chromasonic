@@ -36,7 +36,7 @@ export default function VisitTextHeader({
         },
       }}
     >
-      <h2 className="font-kraftig text-small-heading-mobile font-medium uppercase lg:text-small-heading">
+      <h2 className="font-kraftig text-small-heading-mobile text-[16px] font-medium uppercase lg:text-small-heading">
         <span
           className={cn('', {
             'text-green-400': color === 'green',
@@ -72,7 +72,7 @@ export default function VisitTextHeader({
       </h2>
       <p
         className={cn(
-          'font-kraftig text-[14px] uppercase leading-[20px] tracking-[0.66px] lg:text-[22px] lg:leading-[36px]',
+          'font-kraftig text-[16px] uppercase leading-[20px] tracking-[0.66px] lg:text-[22px] lg:leading-[36px]',
           {
             'text-green-200': color === 'green',
             'text-blue-200': color === 'blue',

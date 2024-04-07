@@ -1,5 +1,4 @@
 export const pageSettings = {
-  // footer fields
   name: 'pageSettings',
   title: 'Page Settings',
   type: 'document',
@@ -27,6 +26,19 @@ export const pageSettings = {
           title: 'Investor inquires text',
           type: 'string',
         },
+      ],
+    },
+    {
+      name: 'CookieBanner',
+      title: 'Cookie Banner',
+      type: 'object',
+      fields: [
+        {
+          name: 'title',
+          title: 'Title',
+          type: 'string',
+        },
+        { name: 'text', title: 'Text', type: 'text' },
       ],
     },
   ],

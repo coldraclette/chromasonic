@@ -13,7 +13,7 @@ interface HeroTextProps {
 export default function HeroText({ animatedTextLines }: HeroTextProps) {
   return (
     <motion.div
-      className="absolute bottom-9 left-0 px-5  lg:bottom-16 lg:px-10"
+      className="absolute bottom-11 left-0 px-5  lg:bottom-16 lg:px-10"
       variants={{
         hidden: { opacity: 0 },
         visible: {
