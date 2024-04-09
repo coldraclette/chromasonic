@@ -43,23 +43,26 @@ export default function SignUp({ signUpText, investorText }: SignUpProps) {
           className="flex flex-col gap-4"
         >
           <div className="grid grid-cols-2 gap-4">
-            <input
-              type="text"
-              value={firstname}
-              onChange={(e) => setFirstname(e.target.value)}
-              placeholder="First Name"
-              className="w-full border-b border-green-100 bg-transparent pt-2 text-green-400 placeholder:text-green-400 focus:ring-0"
-              required
-            />
-
-            <input
-              type="text"
-              value={lastname}
-              onChange={(e) => setLastname(e.target.value)}
-              placeholder="Last Name"
-              className="w-full border-b border-green-100 bg-transparent pt-2 text-green-400 placeholder:text-green-400 focus:ring-0"
-              required
-            />
+            <div className="flex border-b border-green-100">
+              <input
+                type="text"
+                value={firstname}
+                onChange={(e) => setFirstname(e.target.value)}
+                placeholder="First Name"
+                className="w-full  bg-transparent pt-2 text-green-400 placeholder:text-green-400 focus:ring-0"
+                required
+              />
+            </div>
+            <div className="flex border-b border-green-100">
+              <input
+                type="text"
+                value={lastname}
+                onChange={(e) => setLastname(e.target.value)}
+                placeholder="Last Name"
+                className="w-full  bg-transparent pt-2 text-green-400 placeholder:text-green-400 focus:ring-0"
+                required
+              />
+            </div>
           </div>
           <div className="flex border-b border-green-100">
             <input
@@ -92,23 +95,26 @@ export default function SignUp({ signUpText, investorText }: SignUpProps) {
           className="flex flex-col gap-4"
         >
           <div className="grid grid-cols-2 gap-4">
-            <input
-              type="text"
-              value={investorFirstname}
-              onChange={(e) => setInvestorFirstname(e.target.value)}
-              placeholder="First Name"
-              className="w-full border-b border-green-100 bg-transparent pt-2 text-green-400 placeholder:text-green-400 focus:ring-0"
-              required
-            />
-
-            <input
-              type="text"
-              value={investorLastname}
-              onChange={(e) => setInvestorLastname(e.target.value)}
-              placeholder="Last Name"
-              className="w-full border-b border-green-100 bg-transparent pt-2 text-green-400 placeholder:text-green-400 focus:ring-0"
-              required
-            />
+            <div className="flex border-b border-green-100">
+              <input
+                type="text"
+                value={investorFirstname}
+                onChange={(e) => setInvestorFirstname(e.target.value)}
+                placeholder="First Name"
+                className="w-full bg-transparent pt-2 text-green-400 placeholder:text-green-400 focus:ring-0"
+                required
+              />
+            </div>
+            <div className="flex border-b border-green-100">
+              <input
+                type="text"
+                value={investorLastname}
+                onChange={(e) => setInvestorLastname(e.target.value)}
+                placeholder="Last Name"
+                className="w-full bg-transparent pt-2 text-green-400 placeholder:text-green-400 focus:ring-0"
+                required
+              />
+            </div>
           </div>
           <div className="flex border-b border-green-100">
             <input

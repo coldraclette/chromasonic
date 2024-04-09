@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
@@ -56,7 +57,9 @@ export default function Footer({ data }: FooterProps) {
           />
         </div>
         <Link href="/" className="w-full">
-          <LogoGreen />
+          <div className="flex h-16 items-center justify-center overflow-hidden lg:h-auto">
+            <Image src="logoGreen.svg" width={1000} height={40} alt="Logo" className='w-full h-auto' />
+          </div>
         </Link>
       </motion.div>
     </div>
