@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 
+import ArrowRight from '/public/arrowRight.svg';
+
 interface SignUpProps {
   signUpText: string;
   investorText: string;
@@ -74,18 +76,7 @@ export default function SignUp({ signUpText, investorText }: SignUpProps) {
             >
               <span>SUBMIT</span>
               <div className="h-[11px] w-[11px] lg:h-[12.65px] lg:w-[12.65px]">
-                <svg
-                  viewBox="0 0 11 11"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    id="Vector 15"
-                    d="M0 5.71429H9M9 5.71429L4.90909 1M9 5.71429L4.90909 10"
-                    stroke="#75FF8C"
-                    strokeWidth="1.5"
-                  />
-                </svg>
+                <ArrowRight />
               </div>
             </button>
           </div>
@@ -134,18 +125,7 @@ export default function SignUp({ signUpText, investorText }: SignUpProps) {
             >
               <span>SUBMIT</span>
               <div className="h-[11px] w-[11px] lg:h-[12.65px] lg:w-[12.65px]">
-                <svg
-                  viewBox="0 0 11 11"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    id="Vector 15"
-                    d="M0 5.71429H9M9 5.71429L4.90909 1M9 5.71429L4.90909 10"
-                    stroke="#75FF8C"
-                    strokeWidth="1.5"
-                  />
-                </svg>
+                <ArrowRight />
               </div>
             </button>
           </div>

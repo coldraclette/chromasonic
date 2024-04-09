@@ -16,8 +16,8 @@ export default function HeroTextDesktop({ textLines }: HeroTextDesktopProps) {
             hidden: { opacity: 0 },
             visible: { opacity: 1 },
           }}
-          className={cn('lg:text-[75px] font-heading uppercase', {
-            'text-cyan-400': index === 0,
+          className={cn('font-heading uppercase lg:text-[75px]', {
+            'text-cyan-300': index === 0,
             'text-cyan-200': index === 1,
             'text-cyan-100': index > 1,
           })}

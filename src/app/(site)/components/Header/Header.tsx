@@ -67,7 +67,7 @@ export default function Header({ ticketLink }) {
             Home
           </Link>
           <Link onClick={toggleMenu} className={menuItemClasses} href="/#learn">
-            learn
+            discover
           </Link>
           <Link onClick={toggleMenu} className={menuItemClasses} href="/#visit">
             visit
