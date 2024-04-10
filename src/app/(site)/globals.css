@@ -45,5 +45,5 @@ p {
 }
 
 .submit-button:hover path {
-  stroke: #22ff48;
+  fill: #22ff48;
 }
