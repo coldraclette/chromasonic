@@ -13,7 +13,7 @@ export default function LearnSectionBodyText({
 }: LearnSectionBodyTextProps) {
   return (
     <motion.div
-      className="grid lg:gap-[42px] lg:grid-cols-2"
+      className="grid lg:grid-cols-2 gap-4 lg:gap-[42px]"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}

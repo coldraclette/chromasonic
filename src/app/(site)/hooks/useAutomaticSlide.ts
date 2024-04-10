@@ -15,7 +15,7 @@ export const useAutomaticSlide = (
         const nextIndex = (current + 1) % slidesLength;
         return nextIndex;
       });
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [isInView, slidesLength, setActiveSlideIndex]);

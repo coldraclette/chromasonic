@@ -6,12 +6,14 @@ interface LearnSectionHeadingProps {
   byline: string;
   titleLine1: string;
   titleLine2: string;
+  titleLine3?: string;
 }
 
 export default function LearnSectionHeading({
   byline,
   titleLine1,
   titleLine2,
+  titleLine3,
 }: LearnSectionHeadingProps) {
   return (
     <motion.div
@@ -33,6 +35,7 @@ export default function LearnSectionHeading({
       <h3 className="text-heading2-small leading-[34px] lg:text-heading2-medium xl:text-heading2-large flex flex-col pt-1 font-heading">
         <span className="text-blue-300">{titleLine1}</span>
         <span className="text-blue-200">{titleLine2}</span>
+        {titleLine3 && <span className="text-blue-200">{titleLine3}</span>}
       </h3>
     </motion.div>
   );

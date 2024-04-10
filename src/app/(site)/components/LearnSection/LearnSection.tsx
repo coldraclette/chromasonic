@@ -8,8 +8,11 @@ interface LearnSectionProps {
     byline: string;
     titleLine1: string;
     titleLine2: string;
+    titleLine3?: string;
     textArea1: string;
     textArea2: string;
+    textArea3: string;
+    textArea4: string;
     items: LearnItemType[];
   };
 }
@@ -25,6 +28,7 @@ export default function LearnSection({ data }: LearnSectionProps) {
           byline={data.byline}
           titleLine1={data.titleLine1}
           titleLine2={data.titleLine2}
+          titleLine3={data.titleLine3}
         />
         <LearnSectionBodyText
           textArea1={data.textArea1}
@@ -32,6 +36,12 @@ export default function LearnSection({ data }: LearnSectionProps) {
         />
       </div>
       <LearnSectionItems items={data.items} />
+      {data.textArea3 && (
+        <LearnSectionBodyText
+          textArea1={data.textArea3}
+          textArea2={data.textArea4}
+        />
+      )}
     </div>
   );
 }

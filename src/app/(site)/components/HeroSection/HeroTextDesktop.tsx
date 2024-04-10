@@ -7,6 +7,23 @@ interface HeroTextDesktopProps {
 }
 
 export default function HeroTextDesktop({ textLines }: HeroTextDesktopProps) {
+  const formatText = (text: string) => {
+    const parts = text.split('+');
+
+    return parts.reduce((acc, part, index) => {
+      if (index < parts.length - 1) {
+        return [
+          ...acc,
+          part,
+          <span key={index} style={{ marginRight: '5px' }}>
+            +
+          </span>,
+        ];
+      } else {
+        return [...acc, part];
+      }
+    }, []);
+  };
   return (
     <div className="hidden lg:block">
       {textLines.map((line, index) => (
@@ -22,7 +39,7 @@ export default function HeroTextDesktop({ textLines }: HeroTextDesktopProps) {
             'text-cyan-100': index > 1,
           })}
         >
-          {line}
+          {formatText(line)}
         </motion.h2>
       ))}
     </div>

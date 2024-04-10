@@ -104,7 +104,7 @@ export const landingPage = {
     },
     // LEARN SECTION
     {
-      title: 'Learn Section',
+      title: 'Discover Section',
       name: 'learnSection',
       type: 'object',
       group: 'landingPageGroup',
@@ -126,6 +126,12 @@ export const landingPage = {
           name: 'titleLine2',
           type: 'string',
           description: 'The second line of the section title.',
+        },
+        {
+          title: 'Title Line 3',
+          name: 'titleLine3',
+          type: 'string',
+          description: 'The third line of the section title.',
         },
         {
           title: 'Text Area 1',
@@ -172,6 +178,16 @@ export const landingPage = {
               ],
             },
           ],
+        },
+        {
+          title: 'Text Area 3',
+          name: 'textArea3',
+          type: 'text',
+        },
+        {
+          title: 'Text Area 4',
+          name: 'textArea4',
+          type: 'text',
         },
       ],
     },

@@ -7,17 +7,23 @@ interface HeroTextMobileProps {
 }
 
 export default function HeroTextMobile({ textLines }: HeroTextMobileProps) {
-  let globalWordIndex = 0;
+  const formatText = (text: string) => {
+    const parts = text.split('+');
 
-  const mobileColors = [
-    'text-cyan-300',
-    'text-cyan-300',
-    'text-cyan-200',
-    'text-cyan-200',
-    'text-cyan-100',
-    'text-cyan-100',
-  ];
-
+    return parts.reduce((acc, part, index) => {
+      if (index < parts.length - 1) {
+        return [
+          ...acc,
+          part,
+          <span key={index} style={{ marginRight: '5px' }}>
+            +
+          </span>,
+        ];
+      } else {
+        return [...acc, part];
+      }
+    }, []);
+  };
   return (
     <div className="h2 lg:hidden">
       {textLines.map((line, index) => (
@@ -36,30 +42,9 @@ export default function HeroTextMobile({ textLines }: HeroTextMobileProps) {
             }
           )}
         >
-          {line}
+          {formatText(line)}
         </motion.h2>
       ))}
-      {/* {textLines.map((line, lineIndex) => (
-        <div key={lineIndex}>
-          {line.split(' ').map((word, wordIndex) => {
-            const colorClass =
-              mobileColors[globalWordIndex % mobileColors.length];
-            globalWordIndex++;
-            return (
-              <motion.span
-                key={wordIndex}
-                variants={{
-                  hidden: { opacity: 0 },
-                  visible: { opacity: 1 },
-                }}
-                className={`block font-heading text-[29px] uppercase ${colorClass}`}
-              >
-                {word}
-              </motion.span>
-            );
-          })} */}
-      {/* </div> */}
-      {/* ))} */}
     </div>
   );
 }

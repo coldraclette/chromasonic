@@ -44,7 +44,7 @@ export default function LearnSectionItems({ items }: LearnSectionItemsProps) {
                 height={400}
                 width={400}
                 className={cn('max-h-[140px] object-contain lg:max-h-[250px]', {
-                  'h-[160px]': index === 0,
+                  'h-[100px] lg:h-[70%]': index === 0,
                   'h-[233px]': index === 1,
                   'h-[250px]': index === 2,
                 })}
