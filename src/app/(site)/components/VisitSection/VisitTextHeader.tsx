@@ -49,7 +49,7 @@ export default function VisitTextHeader({
           {byline}
         </span>
       </h2>
-      <h2 className="flex flex-col font-heading text-[39px] leading-[38px] h2">
+      <h2 className="flex flex-col font-heading text-[39px] leading-[38px] lg:text-[75px] lg:leading-[70px]">
         {titleLines.map((line, index) => (
           <span
             key={index}

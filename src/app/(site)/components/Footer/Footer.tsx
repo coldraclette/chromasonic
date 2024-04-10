@@ -25,7 +25,7 @@ export default function Footer({ data }: FooterProps) {
   return (
     <div
       id="connect"
-      className="h-full w-full bg-green-500 px-5 pb-6 pt-7 lg:px-10 lg:pb-11 lg:pt-[60px]"
+      className="h-full w-full bg-green-500 px-5 pb-3 pt-7 lg:px-10 lg:pb-[22px] lg:pt-[60px]"
     >
       <motion.div
         className="flex flex-col"
@@ -57,7 +57,7 @@ export default function Footer({ data }: FooterProps) {
           />
         </div>
         <Link href="/" className="w-full">
-          <div className="flex h-16 items-center justify-center overflow-hidden lg:h-auto">
+          <div className="flex h-10 items-center justify-center overflow-hidden lg:h-auto">
             <Image src="/logoGreen.png" width={1000} height={40} alt="Logo" className='w-full h-auto' />
           </div>
         </Link>

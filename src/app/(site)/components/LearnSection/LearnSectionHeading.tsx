@@ -29,12 +29,12 @@ export default function LearnSectionHeading({
         },
       }}
     >
-      <h2 className="text-small-heading-mobile text-[16px] font-medium font-kraftig uppercase text-blue-400 lg:text-small-heading">
+      <h2 className="font-kraftig text-[16px] text-small-heading-mobile font-medium uppercase text-blue-400 lg:text-small-heading">
         {byline}
       </h2>
-      <h3 className="text-heading2-small leading-[34px] lg:text-heading2-medium xl:text-heading2-large flex flex-col pt-1 font-heading">
-        <span className="text-blue-300">{titleLine1}</span>
-        <span className="text-blue-200">{titleLine2}</span>
+      <h3 className="flex flex-col pt-1 font-heading text-heading2-small leading-[34px] lg:text-[75px] lg:leading-[70px]">
+        <span className="text-blue-400">{titleLine1}</span>
+        <span className="text-blue-300">{titleLine2}</span>
         {titleLine3 && <span className="text-blue-200">{titleLine3}</span>}
       </h3>
     </motion.div>
