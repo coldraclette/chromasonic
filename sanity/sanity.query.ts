@@ -18,7 +18,10 @@ export async function getLandingPageData() {
       },
       quoteSection2,
       visitSections,
-      quoteSection3
+      quoteSection3,
+      seoTitle,
+      seoDescription,
+      seoImage,
     }
   `;
   const data = await client.fetch(query);

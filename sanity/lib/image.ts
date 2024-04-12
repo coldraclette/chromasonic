@@ -14,3 +14,30 @@ export const urlForImage = (source: Image) => {
   }
   return imageBuilder?.image(source).auto('format').fit('max').url();
 };
+
+export const urlForImageWithDimensions = (
+  source: Image,
+  width?: number,
+  height?: number
+) => {
+  if (width && height) {
+    return imageBuilder
+      ?.image(source)
+      .auto('format')
+      .fit('max')
+      .width(width)
+      .height(height)
+      .url();
+  }
+
+  if (width) {
+    return imageBuilder
+      ?.image(source)
+      .auto('format')
+      .fit('max')
+      .width(width)
+      .url();
+  }
+
+  return imageBuilder?.image(source).auto('format').fit('max').url();
+};
