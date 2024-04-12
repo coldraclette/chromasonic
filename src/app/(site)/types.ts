@@ -14,6 +14,8 @@ export type SlideType = {
   line2: string;
   line3: string;
   image: ImageType;
+  randomizeMiddleLine?: boolean;
+  middleLinePosition?: string;
 };
 
 export type LearnItemType = {

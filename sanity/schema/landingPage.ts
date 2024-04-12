@@ -57,6 +57,28 @@ export const landingPage = {
               type: 'object',
               fields: [
                 {
+                  title: 'Randomize Middle Line',
+                  name: 'randomizeMiddleLine',
+                  type: 'boolean',
+                  initialValue: true,
+                  description:
+                    'Check this box to randomize the middle line of the quote.',
+                },
+                {
+                  title: 'Middle Line Position',
+                  name: 'middleLinePosition',
+                  type: 'string',
+                  description: 'Position of the middle line of the quote.',
+                  hidden: ({ parent }: any) => parent.randomizeMiddleLine,
+                  options: {
+                    list: [
+                      { title: 'Top', value: 'top' },
+                      { title: 'Middle', value: 'middle' },
+                      { title: 'Bottom', value: 'bottom' },
+                    ],
+                  },
+                },
+                {
                   title: 'Color',
                   name: 'color',
                   type: 'string',
@@ -275,6 +297,28 @@ export const landingPage = {
               type: 'object',
               fields: [
                 {
+                  title: 'Randomize Middle Line',
+                  name: 'randomizeMiddleLine',
+                  type: 'boolean',
+                  initialValue: true,
+                  description:
+                    'Check this box to randomize the middle line of the quote.',
+                },
+                {
+                  title: 'Middle Line Position',
+                  name: 'middleLinePosition',
+                  type: 'string',
+                  description: 'Position of the middle line of the quote.',
+                  hidden: ({ parent }: any) => parent.randomizeMiddleLine,
+                  options: {
+                    list: [
+                      { title: 'Top', value: 'top' },
+                      { title: 'Middle', value: 'middle' },
+                      { title: 'Bottom', value: 'bottom' },
+                    ],
+                  },
+                },
+                {
                   title: 'Color',
                   name: 'color',
                   type: 'string',
@@ -410,6 +454,28 @@ export const landingPage = {
               name: 'slide',
               type: 'object',
               fields: [
+                {
+                  title: 'Randomize Middle Line',
+                  name: 'randomizeMiddleLine',
+                  type: 'boolean',
+                  initialValue: true,
+                  description:
+                    'Check this box to randomize the middle line of the quote.',
+                },
+                {
+                  title: 'Middle Line Position',
+                  name: 'middleLinePosition',
+                  type: 'string',
+                  description: 'Position of the middle line of the quote.',
+                  hidden: ({ parent }: any) => parent.randomizeMiddleLine,
+                  options: {
+                    list: [
+                      { title: 'Top', value: 'top' },
+                      { title: 'Middle', value: 'middle' },
+                      { title: 'Bottom', value: 'bottom' },
+                    ],
+                  },
+                },
                 {
                   title: 'Color',
                   name: 'color',

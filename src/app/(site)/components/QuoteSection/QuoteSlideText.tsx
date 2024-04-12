@@ -35,16 +35,29 @@ export default function QuoteSlideText({ isEven, slide }: QuoteSlideTextProps) {
 
   const lines = [slide.line1, slide.line2, slide.line3];
 
-  const middleQuotePosition = useMemo(() => {
-    const min = 30;
-    const max = 70;
-    return Math.floor(Math.random() * (max - min + 1) + min);
+  const randomMiddleQuotePosition = useMemo(() => {
+    if (slide.randomizeMiddleLine || !slide.middleLinePosition) {
+      const min = 30;
+      const max = 70;
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    } else {
+      switch (slide.middleLinePosition) {
+        case 'top':
+          return 10;
+        case 'middle':
+          return 50;
+        case 'bottom':
+          return 75;
+        default:
+          return 50;
+      }
+    }
   }, [slide]);
 
   return (
     <div
       className={cn(
-        'absolute z-10 flex h-full flex-col justify-between p-5 lg:p-10 lg:relative',
+        'absolute z-10 flex h-full flex-col justify-between p-5 lg:relative lg:p-10',
         {
           'order-1': !isEven,
           'order-2': isEven,
@@ -52,22 +65,22 @@ export default function QuoteSlideText({ isEven, slide }: QuoteSlideTextProps) {
       )}
     >
       <p
-        className={`lg:text-heading2-medium xl:text-heading2-large text-heading2-small font-heading uppercase ${getTextClassName(0, slide.color)}`}
+        className={`font-heading text-heading2-small uppercase lg:text-heading2-medium xl:text-heading2-large ${getTextClassName(0, slide.color)}`}
       >
         {lines[0]}
       </p>
       <div className="relative h-full w-full py-2">
         <p
-          className={`lg:text-heading2-medium xl:text-heading2-large text-heading2-small absolute font-heading uppercase ${getTextClassName(1, slide.color)}`}
+          className={`absolute font-heading text-heading2-small uppercase lg:text-heading2-medium xl:text-heading2-large ${getTextClassName(1, slide.color)}`}
           style={{
-            top: `${middleQuotePosition}%`,
+            top: `${randomMiddleQuotePosition}%`,
           }}
         >
           {lines[1]}
         </p>
       </div>
       <p
-        className={`lg:text-heading2-medium xl:text-heading2-large text-heading2-small font-heading uppercase ${getTextClassName(2, slide.color)}`}
+        className={`font-heading text-heading2-small uppercase lg:text-heading2-medium xl:text-heading2-large ${getTextClassName(2, slide.color)}`}
       >
         {lines[2]}
       </p>
