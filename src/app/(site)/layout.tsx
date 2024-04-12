@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 import './globals.css';
 
@@ -125,6 +125,7 @@ export default async function RootLayout({
         {children}
         <Footer data={footerData} />
         <CookieConsentBanner data={cookiebannerData} />
+        <Analytics />
       </body>
     </html>
   );
