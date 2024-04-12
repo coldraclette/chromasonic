@@ -4,10 +4,7 @@ import './globals.css';
 
 import localFont from 'next/font/local';
 
-import {
-  urlForImage,
-  urlForImageWithDimensions,
-} from '../../../sanity/lib/image';
+import { urlForImageWithDimensions } from '../../../sanity/lib/image';
 import {
   getLandingPageData,
   getPageSettings,

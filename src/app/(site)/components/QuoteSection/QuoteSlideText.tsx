@@ -71,13 +71,15 @@ export default function QuoteSlideText({ isEven, slide }: QuoteSlideTextProps) {
       )}
     >
       <p
-        className={`font-heading text-heading2-small uppercase lg:text-heading2-medium xl:text-heading2-large ${getTextClassName(0, slide.color)}`}
+        className={`font-heading text-heading2-small uppercase leading-[35px] lg:text-heading2-medium xl:text-heading2-large ${getTextClassName(0, slide.color)}`}
       >
         {lines[0]}
       </p>
-      <div className={`relative flex h-full w-full items-center py-2 ${justifyContentClasses}`}>
+      <div
+        className={`relative flex h-full w-full items-center py-2 ${justifyContentClasses}`}
+      >
         <p
-          className={`absolute font-heading text-heading2-small uppercase lg:text-heading2-medium xl:text-heading2-large ${getTextClassName(1, slide.color)}`}
+          className={`absolute font-heading text-heading2-small uppercase leading-[35px] lg:text-heading2-medium xl:text-heading2-large ${getTextClassName(1, slide.color)}`}
           style={{
             top: `${randomMiddleQuotePosition}%`,
           }}
@@ -86,7 +88,7 @@ export default function QuoteSlideText({ isEven, slide }: QuoteSlideTextProps) {
         </p>
       </div>
       <p
-        className={`font-heading text-heading2-small uppercase lg:text-heading2-medium xl:text-heading2-large ${getTextClassName(2, slide.color)}`}
+        className={`font-heading text-heading2-small uppercase leading-[35px] lg:text-heading2-medium xl:text-heading2-large ${getTextClassName(2, slide.color)}`}
       >
         {lines[2]}
       </p>

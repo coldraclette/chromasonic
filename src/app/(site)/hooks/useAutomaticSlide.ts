@@ -10,13 +10,13 @@ export const useAutomaticSlide = (
       return;
     }
 
-    const interval = setInterval(() => {
-      setActiveSlideIndex((current: number) => {
-        const nextIndex = (current + 1) % slidesLength;
-        return nextIndex;
-      });
-    }, 4000);
+    // const interval = setInterval(() => {
+    //   setActiveSlideIndex((current: number) => {
+    //     const nextIndex = (current + 1) % slidesLength;
+    //     return nextIndex;
+    //   });
+    // }, 4000);
 
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, [isInView, slidesLength, setActiveSlideIndex]);
 };

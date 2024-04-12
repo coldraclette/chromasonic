@@ -57,7 +57,9 @@ export default function Footer({ data }: FooterProps) {
           />
         </div>
         <Link href="/" className="w-full">
-          <LogoGreen />
+          <div className='py-2'>
+            <LogoGreen />
+          </div>
         </Link>
       </motion.div>
     </div>
