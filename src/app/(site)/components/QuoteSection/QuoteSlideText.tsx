@@ -54,6 +54,12 @@ export default function QuoteSlideText({ isEven, slide }: QuoteSlideTextProps) {
     }
   }, [slide]);
 
+  const justifyContentClasses = useMemo(() => {
+    const options = ['justify-start', 'justify-center', 'justify-end'];
+    const randomIndex = Math.floor(Math.random() * options.length);
+    return options[randomIndex];
+  }, []);
+
   return (
     <div
       className={cn(
@@ -69,7 +75,7 @@ export default function QuoteSlideText({ isEven, slide }: QuoteSlideTextProps) {
       >
         {lines[0]}
       </p>
-      <div className="relative h-full w-full py-2">
+      <div className={`relative flex h-full w-full items-center py-2 ${justifyContentClasses}`}>
         <p
           className={`absolute font-heading text-heading2-small uppercase lg:text-heading2-medium xl:text-heading2-large ${getTextClassName(1, slide.color)}`}
           style={{
