@@ -57,9 +57,7 @@ export default function Footer({ data }: FooterProps) {
           />
         </div>
         <Link href="/" className="w-full">
-          <div className="flex h-10 items-center justify-center overflow-hidden lg:h-auto">
-            <Image src="/logoGreen.png" width={1000} height={40} alt="Logo" className='w-full h-auto' />
-          </div>
+          <LogoGreen />
         </Link>
       </motion.div>
     </div>
