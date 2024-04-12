@@ -62,7 +62,7 @@ const config: Config = {
             letterSpacing: '0.375px',
           },
         ],
-        'heading-small': ['39px', { lineHeight: '34px' }],
+        'heading-small': ['36px', { lineHeight: '34px' }],
 
         'heading2-large': [
           '4.688rem',
@@ -79,7 +79,7 @@ const config: Config = {
           },
         ],
         'heading2-small': [
-          '39px',
+          '36px',
           {
             lineHeight: '40px',
           },
