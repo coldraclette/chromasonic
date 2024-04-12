@@ -34,9 +34,9 @@ export default function HeroTextDesktop({ textLines }: HeroTextDesktopProps) {
             visible: { opacity: 1 },
           }}
           className={cn('font-heading uppercase lg:text-[75px] leading-[70px]', {
-            'text-cyan-300': index === 0,
-            'text-cyan-200': index === 1,
-            'text-cyan-100': index > 1,
+            'text-cyan-400': index === 0,
+            'text-cyan-300': index === 1,
+            'text-cyan-200': index > 1,
           })}
         >
           {formatText(line)}

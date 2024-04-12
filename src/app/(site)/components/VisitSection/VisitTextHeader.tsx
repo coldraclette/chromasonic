@@ -61,7 +61,7 @@ export default function VisitTextHeader({
               'text-red-400': index === 0 && color === 'red',
               'text-red-300': index > 0 && color === 'red',
               'text-pink-400': index === 0 && color === 'pink',
-              'text-pink-200': index > 0 && color === 'pink',
+              'text-pink-300': index > 0 && color === 'pink',
               'text-cyan-400': index === 0 && color === 'cyan',
               'text-cyan-300': index > 0 && color === 'cyan',
             })}

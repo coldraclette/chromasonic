@@ -47,14 +47,19 @@ export default function GridItemHeader({
         {byline}
       </h4>
       <h3 className="flex flex-col text-heading2-small leading-[35px] lg:text-heading2-medium lg:leading-[45px]">
-        {title.map((title) => (
+        {title.map((title, index) => (
           <span
             className={cn('font-heading uppercase', {
-              'text-green-200': color === 'green',
-              'text-blue-200': color === 'blue',
-              'text-red-200': color === 'red',
-              'text-pink-200': color === 'pink',
-              'text-cyan-200': color === 'cyan',
+              'text-green-300': index === 0 && color === 'green',
+              'text-green-200': index > 0 && color === 'green',
+              'text-blue-300': index === 0 && color === 'blue',
+              'text-blue-200': index > 0 && color === 'blue',
+              'text-red-300': index === 0 && color === 'red',
+              'text-red-200': index > 0 && color === 'red',
+              'text-pink-300': index === 0 && color === 'pink',
+              'text-pink-200': index > 0 && color === 'pink',
+              'text-cyan-300': index === 0 && color === 'cyan',
+              'text-cyan-200': index > 0 && color === 'cyan',
             })}
             key={title}
           >
