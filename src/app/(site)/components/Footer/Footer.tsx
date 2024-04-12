@@ -25,7 +25,7 @@ export default function Footer({ data }: FooterProps) {
   return (
     <div
       id="connect"
-      className="h-full w-full bg-green-500 px-5 pb-3 pt-7 lg:px-10 lg:pb-[22px] lg:pt-[60px]"
+      className="h-full w-full bg-green-500 px-5 pb-3 pt-7 lg:px-10 lg:pb-[22px] lg:pt-11"
     >
       <motion.div
         className="flex flex-col"

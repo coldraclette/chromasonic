@@ -11,7 +11,7 @@ export default function GridItem({ item }: GridItemProps) {
   return (
     <div
       key={item._key}
-      className="flex flex-col pb-[100px] pt-11 last:pb-0 lg:pb-[100px] lg:pt-24"
+      className="flex flex-col pb-[100px] pt-11 last:pb-0 lg:pb-[100px] lg:pt-11"
     >
       <GridItemHeader
         title={item.title}

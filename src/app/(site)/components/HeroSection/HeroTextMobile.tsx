@@ -34,7 +34,7 @@ export default function HeroTextMobile({ textLines }: HeroTextMobileProps) {
             visible: { opacity: 1 },
           }}
           className={cn(
-            'font-heading text-heading2-small uppercase leading-[34px]',
+            'font-heading text-heading2-small uppercase leading-[35px]',
             {
               'text-cyan-300': index === 0,
               'text-cyan-200': index === 1,

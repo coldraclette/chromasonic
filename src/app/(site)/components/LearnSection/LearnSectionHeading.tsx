@@ -32,7 +32,7 @@ export default function LearnSectionHeading({
       <h2 className="font-kraftig text-[16px] text-small-heading-mobile font-medium uppercase text-blue-400 lg:text-small-heading">
         {byline}
       </h2>
-      <h3 className="flex flex-col pt-1 font-heading text-heading2-small leading-[34px] lg:text-[75px] lg:leading-[70px]">
+      <h3 className="flex flex-col pt-1 font-heading text-heading2-small leading-[35px] lg:text-[75px] lg:leading-[70px]">
         <span className="text-blue-400">{titleLine1}</span>
         <span className="text-blue-300">{titleLine2}</span>
         {titleLine3 && <span className="text-blue-200">{titleLine3}</span>}

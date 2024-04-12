@@ -46,7 +46,7 @@ export default function GridItemHeader({
       >
         {byline}
       </h4>
-      <h3 className="flex flex-col text-heading2-small leading-[34px] xl:leading-[65px] lg:text-heading2-medium xl:text-heading2-large">
+      <h3 className="flex flex-col text-heading2-small leading-[35px] lg:text-heading2-medium lg:leading-[45px]">
         {title.map((title) => (
           <span
             className={cn('font-heading uppercase', {
