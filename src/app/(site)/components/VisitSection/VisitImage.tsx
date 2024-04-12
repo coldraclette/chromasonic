@@ -34,6 +34,8 @@ export default function VisitImage({ image }: VisitImageProps) {
         alt=""
         fill
         className="h-full w-full object-cover"
+        quality={100}
+        sizes="(max-width: 640px) 1024px, (max-width: 768px) 1024px, (max-width: 1024px) 1024px, 2400px"
       />
     </motion.div>
   );
